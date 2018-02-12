@@ -34,7 +34,7 @@
         <true/>
         <key>NSExceptionDomains</key>
         <dict>
-            <key>dinopass.com/key>
+            <key>dinopass.com</key>
             <dict>
                 <key>NSExceptionAllowsInsecureHTTPLoads</key>
                 <true/>
