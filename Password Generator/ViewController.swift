@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Alamofire
 
 class ViewController: NSViewController {
 
@@ -14,6 +15,12 @@ class ViewController: NSViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let SimpleURL = "http://www.dinopass.com/password/simple"
+        
+        Alamofire.request(SimpleURL).responseString { response in
+            print(response.result.value!)
+        }
+        
     }
 
     override var representedObject: Any? {
