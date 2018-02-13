@@ -18,6 +18,10 @@ struct Const {
         static let CSVHeader = "passwords\n" //For multiple headers - header1,header2,header3\n
         static let Name = "test" //default file name for password export
         static let FileTypes = ["csv"] //comma-seperated file types ["csv","txt"]
-        static let AllowOtherFileTypes = false
+        static let AllowOtherFileTypes = false //Do not allow user to change the exported file type
+    }
+    
+    struct Data {
+        
     }
 }
