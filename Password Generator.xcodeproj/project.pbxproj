@@ -14,6 +14,9 @@
 		161F6EF82031860800C28053 /* Password_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6EF72031860800C28053 /* Password_GeneratorTests.swift */; };
 		161F6F032031860800C28053 /* Password_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6F022031860800C28053 /* Password_GeneratorUITests.swift */; };
 		16ECA5A320318DF100276D11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16ECA59A20318DDC00276D11 /* Alamofire.framework */; };
+		16ECA5A52032703A00276D11 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A42032703A00276D11 /* SimpleViewController.swift */; };
+		16ECA5A7203275B900276D11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A6203275B900276D11 /* Constants.swift */; };
+		16ECA5A9203276F600276D11 /* StrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A8203276F600276D11 /* StrongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,9 @@
 		161F6F022031860800C28053 /* Password_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_GeneratorUITests.swift; sourceTree = "<group>"; };
 		161F6F042031860800C28053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16ECA58A20318DDC00276D11 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Library/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		16ECA5A42032703A00276D11 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		16ECA5A6203275B900276D11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		16ECA5A8203276F600276D11 /* StrongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,9 @@
 				161F6EE62031860700C28053 /* ViewController.swift */,
 				161F6EE82031860700C28053 /* Assets.xcassets */,
 				161F6EEA2031860700C28053 /* Main.storyboard */,
+				16ECA5A8203276F600276D11 /* StrongViewController.swift */,
+				16ECA5A6203275B900276D11 /* Constants.swift */,
+				16ECA5A42032703A00276D11 /* SimpleViewController.swift */,
 				161F6EED2031860700C28053 /* Info.plist */,
 				161F6EEE2031860700C28053 /* Password_Generator.entitlements */,
 			);
@@ -404,8 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16ECA5A9203276F600276D11 /* StrongViewController.swift in Sources */,
 				161F6EE72031860700C28053 /* ViewController.swift in Sources */,
 				161F6EE52031860700C28053 /* AppDelegate.swift in Sources */,
+				16ECA5A52032703A00276D11 /* SimpleViewController.swift in Sources */,
+				16ECA5A7203275B900276D11 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
