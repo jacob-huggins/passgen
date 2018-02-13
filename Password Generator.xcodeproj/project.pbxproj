@@ -13,10 +13,11 @@
 		161F6EEC2031860700C28053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161F6EEA2031860700C28053 /* Main.storyboard */; };
 		161F6EF82031860800C28053 /* Password_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6EF72031860800C28053 /* Password_GeneratorTests.swift */; };
 		161F6F032031860800C28053 /* Password_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6F022031860800C28053 /* Password_GeneratorUITests.swift */; };
-		16ECA5A320318DF100276D11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16ECA59A20318DDC00276D11 /* Alamofire.framework */; };
 		16ECA5A52032703A00276D11 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A42032703A00276D11 /* SimpleViewController.swift */; };
 		16ECA5A7203275B900276D11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A6203275B900276D11 /* Constants.swift */; };
 		16ECA5A9203276F600276D11 /* StrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A8203276F600276D11 /* StrongViewController.swift */; };
+		16ECA5E22032CBC500276D11 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16ECA59A20318DDC00276D11 /* Alamofire.framework */; };
+		16ECA5E32032CBC500276D11 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 16ECA59A20318DDC00276D11 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,13 @@
 			remoteGlobalIDString = E4202FE01B667AA100C997FB;
 			remoteInfo = "Alamofire watchOS";
 		};
+		16ECA5E42032CBC500276D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16ECA58A20318DDC00276D11 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DD67C0A1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +100,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				16ECA5E32032CBC500276D11 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,7 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16ECA5A320318DF100276D11 /* Alamofire.framework in Frameworks */,
+				16ECA5E22032CBC500276D11 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				16ECA5E52032CBC500276D11 /* PBXTargetDependency */,
 			);
 			name = "Password Generator";
 			productName = "Password Generator";
@@ -449,6 +459,11 @@
 			isa = PBXTargetDependency;
 			target = 161F6EE02031860700C28053 /* Password Generator */;
 			targetProxy = 161F6EFF2031860800C28053 /* PBXContainerItemProxy */;
+		};
+		16ECA5E52032CBC500276D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire macOS";
+			targetProxy = 16ECA5E42032CBC500276D11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
