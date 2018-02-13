@@ -16,6 +16,8 @@ class StrongViewController: NSViewController {
     let ExportName = Const.Export.Name
     let ExportTypes = Const.Export.FileTypes
     let ExportOthers = Const.Export.AllowOtherFileTypes
+    let ExportTimer = Const.Data.Timer
+
     
     @IBOutlet weak var labelGenerate: NSTextField!
     @IBOutlet weak var inputExportAmount: NSTextField!
@@ -32,29 +34,35 @@ class StrongViewController: NSViewController {
     }
     
     @IBAction func buttonExport(_ sender: Any) {
-        let exportAmount = inputExportAmount.integerValue
-        var exportData = ExportHeader
-        
-        for _ in 1...exportAmount {
-            Alamofire.request(StrongURL).responseString { response in
-                exportData += response.result.value! + "\n"
+        if 1...5000 ~= inputExportAmount.intValue {
+            let exportAmount = inputExportAmount.intValue
+            var exportData = ExportHeader
+            
+            for _ in 1...exportAmount {
+                Alamofire.request(StrongURL).responseString { response in
+                    exportData += response.result.value! + "\n"
+                }
+                usleep(ExportTimer)
             }
-            usleep(50000)
-        }
-        
-        let export = NSSavePanel()
-        export.nameFieldStringValue = ExportName
-        export.allowedFileTypes = ExportTypes
-        export.allowsOtherFileTypes = ExportOthers
-        
-        export.begin { (result) -> Void in
-            if result == NSApplication.ModalResponse.OK {
-                do {
-                    try exportData.write(to: export.url!, atomically: true, encoding: String.Encoding.utf8)
-                } catch {
-                    // failed to write file (bad permissions, bad filename etc.)
+            
+            let export = NSSavePanel()
+            export.nameFieldStringValue = ExportName
+            export.allowedFileTypes = ExportTypes
+            export.allowsOtherFileTypes = ExportOthers
+            
+            export.begin { (result) -> Void in
+                if result == NSApplication.ModalResponse.OK {
+                    do {
+                        try exportData.write(to: export.url!, atomically: true, encoding: String.Encoding.utf8)
+                    } catch {
+                        // failed to write file (bad permissions, bad filename etc.)
+                    }
                 }
             }
+        } else if inputExportAmount.intValue == 0 {
+            print("0") //no value entered
+        } else {
+            //value too high or in negatives
         }
     }
     

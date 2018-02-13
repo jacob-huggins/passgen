@@ -22,6 +22,6 @@ struct Const {
     }
     
     struct Data {
-        
+        static let Timer = UInt32(50000) //Timer between dinopass polling to avoid being blocked
     }
 }
