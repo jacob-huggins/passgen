@@ -13,6 +13,7 @@
 		161F6EEC2031860700C28053 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 161F6EEA2031860700C28053 /* Main.storyboard */; };
 		161F6EF82031860800C28053 /* Password_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6EF72031860800C28053 /* Password_GeneratorTests.swift */; };
 		161F6F032031860800C28053 /* Password_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F6F022031860800C28053 /* Password_GeneratorUITests.swift */; };
+		16D9554D203E7F980070FE6E /* ico.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 16D9554C203E7F980070FE6E /* ico.iconset */; };
 		16ECA5A52032703A00276D11 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A42032703A00276D11 /* SimpleViewController.swift */; };
 		16ECA5A7203275B900276D11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A6203275B900276D11 /* Constants.swift */; };
 		16ECA5A9203276F600276D11 /* StrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16ECA5A8203276F600276D11 /* StrongViewController.swift */; };
@@ -121,6 +122,7 @@
 		161F6EFE2031860800C28053 /* Password GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Password GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		161F6F022031860800C28053 /* Password_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password_GeneratorUITests.swift; sourceTree = "<group>"; };
 		161F6F042031860800C28053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16D9554C203E7F980070FE6E /* ico.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = ico.iconset; sourceTree = "<group>"; };
 		16ECA58A20318DDC00276D11 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Library/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		16ECA5A42032703A00276D11 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		16ECA5A6203275B900276D11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				161F6EE42031860700C28053 /* AppDelegate.swift */,
 				161F6EE62031860700C28053 /* ViewController.swift */,
 				161F6EE82031860700C28053 /* Assets.xcassets */,
+				16D9554C203E7F980070FE6E /* ico.iconset */,
 				161F6EEA2031860700C28053 /* Main.storyboard */,
 				16ECA5A8203276F600276D11 /* StrongViewController.swift */,
 				16ECA5A6203275B900276D11 /* Constants.swift */,
@@ -399,6 +402,7 @@
 			files = (
 				161F6EE92031860700C28053 /* Assets.xcassets in Resources */,
 				161F6EEC2031860700C28053 /* Main.storyboard in Resources */,
+				16D9554D203E7F980070FE6E /* ico.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,6 +20,7 @@ class SimpleViewController: NSViewController {
     
     @IBOutlet weak var labelGenerate: NSTextField!
     @IBOutlet weak var inputExportAmount: NSTextField!
+    @IBOutlet weak var outputGenerate: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class SimpleViewController: NSViewController {
     
     @IBAction func buttonGenerate(_ sender: Any) {
         Alamofire.request(SimpleURL).responseString { response in
-            self.labelGenerate.stringValue = response.result.value!
+            self.outputGenerate.stringValue = response.result.value!
         }
     }
     

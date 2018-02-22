@@ -19,8 +19,8 @@ class StrongViewController: NSViewController {
     let ExportTimer = Const.Data.Timer
 
     
-    @IBOutlet weak var labelGenerate: NSTextField!
     @IBOutlet weak var inputExportAmount: NSTextField!
+    @IBOutlet weak var outputGenerate: NSTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class StrongViewController: NSViewController {
     
     @IBAction func buttonGenerate(_ sender: Any) {
         Alamofire.request(StrongURL).responseString { response in
-            self.labelGenerate.stringValue = response.result.value!
+            self.outputGenerate.stringValue = response.result.value!
         }
     }
     
